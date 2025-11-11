@@ -1,4 +1,3 @@
-/* src/index.css */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 a {
@@ -27,7 +26,6 @@ img {
   display: block;
 }
 
-/* Navigation */
 .navbar {
   position: fixed;
   top: 0;
@@ -56,8 +54,8 @@ img {
 }
 
 .logo-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
   border-radius: 8px;
   display: flex;
@@ -82,7 +80,7 @@ img {
 .nav-links {
   display: flex;
   gap: 2.5rem;
-  font-weight: 500;
+  font-weight: 350;
   color: #4b5563;
 }
 
@@ -110,7 +108,6 @@ img {
   transform: translateY(-2px);
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -206,7 +203,6 @@ img {
   transform: translateY(-4px) scale(1.05);
 }
 
-/* Mobile Menu Button */
 .mobile-menu {
   display: none;
   font-size: 2rem;
@@ -214,7 +210,6 @@ img {
   background: none;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -242,7 +237,7 @@ img {
     text-align: center;
   }
 }
-/* === MODERN SERVICES PAGE - CLINIC STYLE === */
+/* SERVICES PAGE - CLINIC STYLE  */
 .services-modern {
   position: relative;
   min-height: 100vh;
@@ -328,7 +323,7 @@ img {
 }
 
 .flu-card .card-tag { background: #10b981; }
-.school-card .card-tag { background: #3b82f6; }
+.school-card .card-tag { background: #01193e; }
 .pharmacy-card .card-tag { background: #f59e0b; }
 
 .service-modern-card h3 {
@@ -383,9 +378,135 @@ img {
   transform: scale(1.05);
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .services-main-title { font-size: 3rem; }
   .services-main-subtitle { font-size: 1.1rem; }
   .services-cards-grid { grid-template-columns: 1fr; }
+}
+/* EYE CARE */
+.eye-care-section {
+  /* background: #f8fafc; */
+  padding: 90px 2rem;
+  margin-top: 10px;
+}
+
+.eye-care-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.eye-care-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.eye-care-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.eye-care-subtitle {
+  font-size: 1.15rem;
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.eye-care-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eye-care-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.eye-exam-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-exam-image {
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.blue-card {
+  border-color: #3b82f6;
+}
+
+.blue-card:hover {
+  border-color: #2563eb;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .eye-care-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .eye-exam-image-container {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+  
+  .eye-care-features {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .eye-care-section { padding: 80px 1rem; }
+  .eye-care-title { font-size: 2rem; }
+  .eye-exam-image { height: 250px; max-width: 250px; }
 }

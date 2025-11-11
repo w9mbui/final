@@ -18,7 +18,7 @@ const Home = () => {
                 />
               </svg>
             </div>
-            <span className="logo-text">Daktuuur</span>
+            <span className="logo-text">The Haven Hospital</span>
           </div>
 
           <div className="nav-links">
@@ -26,7 +26,6 @@ const Home = () => {
             <a href="/about">About Us</a>
             <a href="/services">Services</a>
             <a href="/doctors">Doctors</a>
-            <a href="/wellness">Wellness</a>
             <a href="/contact">Contact</a>
           </div>
 
@@ -46,7 +45,7 @@ const Home = () => {
           </h1>
           <p className="hero-text">
             Experience a new era of personalized healthcare — from instant doctor consultations 
-            to long-term wellness guidance. Wherever you are, Daktuuur is with you.
+            to long-term wellness guidance. Wherever you are, The Haven Hospital is with you.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">Start Consultation</button>
