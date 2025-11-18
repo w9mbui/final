@@ -38,17 +38,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import Services from './components/Services';
+import About from './components/About';
+import Doctors from './components/Doctors';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div>About Us (coming soon)</div>} />
-          <Route path="/services" element={<Services /> } />
-        <Route path="/doctors" element={<div>Our Doctors</div>} />
-        <Route path="/wellness" element={<div>Wellness Programs</div>} />
-        <Route path="/contact" element={<div>Contact Us</div>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services /> } />
+        <Route path="/doctors" element={<Doctors/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
   );

@@ -52,6 +52,7 @@ const Home = () => {
             <button className="btn-secondary">Explore Wellness Programs</button>
           </div>
         </div>
+
       </section>
     </>
   );
