@@ -1,6 +1,8 @@
 import React from 'react';
 import '../index.css';
 import heroImage from '../assets/hosi.jpg';
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -29,7 +31,8 @@ const Home = () => {
             <a href="/contact">Contact</a>
           </div>
 
-          <button className="book-btn">Book Appointment</button>
+          <Link to="/book-appointment">
+          <button className="book-btn">Book Appointment</button> </Link>
           <button className="mobile-menu">Menu</button>
         </div>
       </nav>

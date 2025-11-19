@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -22,7 +23,9 @@ const Contact = () => {
             <a href="/doctors">Doctors</a>
             <a href="/contact">Contact</a>
           </div>
-          <button className="book-btn">Book Appointment</button>
+          <Link to="/book-appointment">
+          <button className="book-btn">Book Appointment</button> </Link>
+          
         </div>
       </nav>
 

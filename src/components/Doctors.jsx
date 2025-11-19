@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+import { Link } from "react-router-dom";
 import doc1 from "../assets/doc11.png";
 import doc2 from "../assets/doc2.webp";
 import doc3 from "../assets/doc3.jpg";
@@ -33,8 +34,8 @@ const Doctors = () => {
             <a href="/doctors">Doctors</a>
             <a href="/contact">Contact</a>
           </div>
-          <button className="book-btn">Book Appointment</button>
-          <button className="mobile-menu">Menu</button>
+          <Link to="/book-appointment">
+          <button className="book-btn">Book Appointment</button> </Link>
         </div>
       </nav>
 
@@ -233,6 +234,8 @@ const Doctors = () => {
           </div>
         </div>
       </section>
+      
+
     </>
   );
 };

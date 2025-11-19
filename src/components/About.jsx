@@ -46,7 +46,8 @@ const About = () => {
             <a href="/doctors">Doctors</a>
             <a href="/contact">Contact</a>
           </div>
-          <button className="book-btn">Book Appointment</button>
+          <Link to="/book-appointment">
+          <button className="book-btn">Book Appointment</button> </Link>
           <button className="mobile-menu">Menu</button>
         </div>
       </nav>
